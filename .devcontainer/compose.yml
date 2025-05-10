@@ -4,6 +4,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        - KEYBOARD=${KEYBOARD}
+        - KEYMAP=${KEYMAP}
     volumes:
       - ../:/home/user/app
       - ../keyboards:/home/user/qmk_firmware/keyboards

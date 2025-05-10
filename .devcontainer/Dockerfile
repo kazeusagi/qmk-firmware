@@ -24,3 +24,9 @@ USER $USER_NAME
 # QMKのインストール
 RUN sudo python3 -m pip install qmk
 RUN qmk setup -y
+
+# QMKの設定
+ARG KEYBOARD
+ARG KEYMAP
+RUN qmk config user.keyboard=${KEYBOARD}
+RUN qmk config user.keymap=${KEYMAP}

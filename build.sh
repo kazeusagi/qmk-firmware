@@ -1,1 +1,0 @@
-qmk compile -kb reviung53 -km default
