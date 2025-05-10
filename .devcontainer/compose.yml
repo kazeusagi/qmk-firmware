@@ -6,5 +6,6 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ../:/home/user/app
-      - ../qmk_firmware:/home/user/qmk_firmware
+      - ../keyboards:/home/user/qmk_firmware/keyboards
+      - ../dist:/home/user/qmk_userspace
     tty: true

@@ -23,3 +23,4 @@ USER $USER_NAME
 
 # QMKのインストール
 RUN sudo python3 -m pip install qmk
+RUN qmk setup -y
