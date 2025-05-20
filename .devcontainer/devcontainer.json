@@ -1,5 +1,5 @@
 {
-	"name": "Shared Infrastructure",
+	"name": "QMK Firmware",
 	"dockerComposeFile": "./compose.yml",
 	"service": "app",
 	"workspaceFolder": "/home/user/app",
